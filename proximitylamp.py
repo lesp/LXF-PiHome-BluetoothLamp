@@ -2,8 +2,6 @@ import bluetooth
 from energenie import switch_on, switch_off
 import time
 
-
-#print(nearby_devices[0])
 try:
     while True:
         nearby_devices = bluetooth.discover_devices(duration=8, lookup_names=False, flush_cache=True, lookup_class=False)
